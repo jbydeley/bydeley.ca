@@ -9,6 +9,8 @@ deploy:
   steps:
     - install-packages:
       packages: openssh-client
+    - install-packages:
+      packages: rsync
     - add-to-known_hosts:
       hostname: bydeley.ca
     - mktemp:
