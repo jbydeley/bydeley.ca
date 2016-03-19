@@ -24,6 +24,6 @@ deploy:
     - sh4pe/rsync-deploy@1.0.1:
       host: bydeley.ca
       user: root
-      sshkey: $DO_PRIVATE
+      sshkey: $PRIVATEKEY_PATH
       source: /public
       destination: /usr/share/nginx/html
