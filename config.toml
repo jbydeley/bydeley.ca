@@ -1,4 +1,4 @@
 baseurl = "http://bydeley.ca/"
 languageCode = "en-us"
 title = "Bydeley Blog"
-theme = "hugo_theme_robust"
+theme = "hugo-theme-air"
