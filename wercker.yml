@@ -5,10 +5,6 @@ build:
       version: "0.15"
       theme: "hugo_theme_robust"
       flags: --buildDrafts=true
-    - script:
-      name: copy output
-      code: |-
-        rsync -avz "$WERCKER_SOURCE_DIR/" "$WERCKER_OUTPUT_DIR"
 deploy:
   steps:
     - add-to-known_hosts:
@@ -24,12 +20,12 @@ deploy:
     - script:
       name: stop application
       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx stop
-    - script:
-      name: transfer application
-      code: |
-        pwd
-        ls -la
-        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean root@bydeley.ca:/var/local/www
+    - sh4pe/rsync-deploy@1.0.1:
+      host: bydeley.ca
+      user: root
+      sshkey: $PRIVATEKEY_FILE
+      source: $WERCKER_SOURCE_DIR/public
+      destination: /var/local/www
     - script:
       name: start application
       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx start
