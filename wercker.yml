@@ -25,5 +25,5 @@ deploy:
       host: bydeley.ca
       user: root
       sshkey: $PRIVATEKEY_PATH
-      source: /public
+      source: public
       destination: /usr/share/nginx/html
