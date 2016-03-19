@@ -7,16 +7,6 @@ build:
       flags: --buildDrafts=true
 deploy:
   steps:
-    - add-to-known_hosts:
-      hostname: bydeley.ca
-    - mktemp:
-      envvar: PRIVATEKEY_PATH
-    - create-file:
-      name: write key
-      filename: $PRIVATEKEY_PATH
-      content: $DO_PRIVATE
-      overwrite: true
-      hide-from-log: true
     - script:
       name: stop application
       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx stop
