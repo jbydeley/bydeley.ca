@@ -8,8 +8,6 @@ build:
 deploy:
   steps:
     - install-packages:
-      packages: openssh-client
-    - install-packages:
       packages: rsync
     - add-to-known_hosts:
       hostname: 159.203.11.136
