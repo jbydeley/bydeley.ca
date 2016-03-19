@@ -20,7 +20,7 @@ deploy:
     - create-file:
       name: write key
       filename: $PRIVATEKEY_PATH
-      content: $FOO_PRIVATE
+      content: $DO_PRIVATE
       overwrite: true
       hide-from-log: true
    - script:
