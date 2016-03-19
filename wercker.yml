@@ -12,7 +12,7 @@ deploy:
     - install-packages:
       packages: rsync
     - add-to-known_hosts:
-      hostname: bydeley.ca
+      hostname: 159.203.11.136
     - mktemp:
       envvar: PRIVATEKEY_PATH
     - create-file:
@@ -22,8 +22,8 @@ deploy:
       overwrite: true
       hide-from-log: true
     - sh4pe/rsync-deploy@1.0.1:
-      host: bydeley.ca
+      host: 159.203.11.136
       user: root
       sshkey: $PRIVATEKEY_PATH
-      source: public
+      source: ./public
       destination: /usr/share/nginx/html
