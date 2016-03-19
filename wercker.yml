@@ -24,8 +24,8 @@ deploy:
       host: bydeley.ca
       user: root
       sshkey: $PRIVATEKEY_FILE
-      source: $WERCKER_SOURCE_DIR/public
-      destination: /var/local/www
+      source: /public
+      destination: /usr/share/nginx/html
     - script:
       name: start application
       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx start
