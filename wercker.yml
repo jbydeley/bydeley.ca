@@ -19,15 +19,9 @@ deploy:
       content: $DO_PRIVATE
       overwrite: true
       hide-from-log: true
-    - script:
-      name: stop application
-      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx stop
     - sh4pe/rsync-deploy@1.0.1:
       host: bydeley.ca
       user: root
-      sshkey: $PRIVATEKEY_FILE
+      sshkey: $DO_PRIVATE
       source: /public
       destination: /usr/share/nginx/html
-    - script:
-      name: start application
-      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx start
