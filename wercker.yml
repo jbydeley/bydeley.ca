@@ -5,10 +5,10 @@ build:
       version: "0.15"
       theme: "hugo_theme_robust"
       flags: --buildDrafts=true
-    - install-packages:
-        packages: openssh-client
 deploy:
   steps:
+    - install-packages:
+      packages: openssh-client
     - add-to-known_hosts:
       hostname: bydeley.ca
     - mktemp:
