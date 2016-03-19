@@ -5,3 +5,33 @@ build:
       version: "0.15"
       theme: "hugo_theme_robust"
       flags: --buildDrafts=true
+
+    - script:
+      name: copy output
+      code: |-
+        rsync -avz "$WERCKER_SOURCE_DIR/" "$WERCKER_OUTPUT_DIR"
+
+deploy:
+  steps:
+    - add-to-known_hosts:
+      hostname: bydeley.ca
+    - mktemp:
+      envvar: PRIVATEKEY_PATH
+    - create-file:
+      name: write key
+      filename: $PRIVATEKEY_PATH
+      content: $FOO_PRIVATE
+      overwrite: true
+      hide-from-log: true
+   - script:
+      name: stop application
+      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx stop
+   - script:
+      name: transfer application
+      code: |
+        pwd
+        ls -la
+        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean root@bydeley.ca:/var/local/www
+   - script:
+      name: start application
+      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no bydeley.ca service nginx start
