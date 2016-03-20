@@ -1,4 +1,11 @@
 baseurl = "http://bydeley.ca/"
 languageCode = "en-us"
 title = "Bydeley Blog"
-theme = "hugo-theme-air"
+theme = "hyde"
+email = "jared@bydeley.ca"
+description = "A responsive and minimal single-page portfolio."
+homepage = "//github.com/digitalcraftsman/hugo-strata-theme"
+
+[params.sidebar]
+	avatar = "avatar.jpg"
+	bio = "Hello"
