@@ -1,11 +1,76 @@
 baseurl = "http://bydeley.ca/"
 languageCode = "en-us"
-title = "Bydeley Blog"
-theme = "hyde"
-email = "jared@bydeley.ca"
-description = "A responsive and minimal single-page portfolio."
-homepage = "//github.com/digitalcraftsman/hugo-strata-theme"
+title = "The Bydeley Family"
+theme = "hugo-strata-theme"
 
-[params.sidebar]
-	avatar = "avatar.jpg"
-	bio = "Hello"
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Jared Bydeley"
+	description = "The Bydeley Family"
+
+	# Enable Google Analytics by inserting your tracking code
+	googleAnalytics = ""
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "IMG_20151225_103045.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**We're the Bydeleys**, <br>Jared, Alison and Emily."
+		# The icons will be shown if you enter your username
+		twitter = "jaredbydeley"
+		github = "jbydeley"
+		dribbble = ""
+		facebook = "jbydeley"
+
+		copyright = [
+			"&copy; Jared Bydeley"
+		]
+
+
+	[params.about]
+		title = "The Bydeley Family"
+		content = "This is a site for us to post a few pictures of our family which we will change up from time to time."
+
+
+	[params.portfolio]
+		title = "Recent Photos"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "IMG_20160319_124056.jpg"
+			thumb = "IMG_20160319_124056.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "IMG_20160215_102746.jpg"
+			thumb = "IMG_20160215_102746.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "IMG_20160215_105037.jpg"
+			thumb = "IMG_20160215_105037.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "IMG_20160319_124001.jpg"
+			thumb = "IMG_20160319_124001.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "IMG_20160319_124110.jpg"
+			thumb = "IMG_20160319_124110.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "IMG_20160302_184114.jpg"
+			thumb = "IMG_20160302_184114.jpg"
+			title = "Lorem ipsum dolor."
+			description = "Lorem ipsum dolor sit amet."
