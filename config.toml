@@ -15,7 +15,7 @@ theme = "hugo-strata-theme"
 
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
-		avatar = "IMG_20151225_103045.jpg"
+		avatar = "http://images.bydeley.ca/IMG_20151225_103045.jpg"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "**We're the Bydeleys**, <br>Jared, Alison and Emily."
 		# The icons will be shown if you enter your username
@@ -40,37 +40,37 @@ theme = "hugo-strata-theme"
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
 		[[params.portfolio.gallery]]
-			image = "IMG_20160319_124056.jpg"
-			thumb = "IMG_20160319_124056.jpg"
+			image = "http://images.bydeley.ca/IMG_20160319_124056.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160319_124056.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "IMG_20160215_102746.jpg"
-			thumb = "IMG_20160215_102746.jpg"
+			image = "http://images.bydeley.ca/IMG_20160215_102746.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160215_102746.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "IMG_20160215_105037.jpg"
-			thumb = "IMG_20160215_105037.jpg"
+			image = "http://images.bydeley.ca/IMG_20160215_105037.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160215_105037.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "IMG_20160319_124001.jpg"
-			thumb = "IMG_20160319_124001.jpg"
+			image = "http://images.bydeley.ca/IMG_20160319_124001.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160319_124001.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "IMG_20160319_124110.jpg"
-			thumb = "IMG_20160319_124110.jpg"
+			image = "http://images.bydeley.ca/IMG_20160319_124110.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160319_124110.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "IMG_20160302_184114.jpg"
-			thumb = "IMG_20160302_184114.jpg"
+			image = "http://images.bydeley.ca/IMG_20160302_184114.jpg"
+			thumb = "http://images.bydeley.ca/IMG_20160302_184114.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
