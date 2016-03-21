@@ -15,7 +15,7 @@ theme = "hugo-strata-theme"
 
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
-		avatar = "http://images.bydeley.ca/IMG_20151225_103045.jpg"
+		avatar = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20151225_103034.png"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "**We're the Bydeleys**, <br>Jared, Alison and Emily."
 		# The icons will be shown if you enter your username
