@@ -1,4 +1,4 @@
-baseurl = "http://bydeley.ca/"
+baseurl = "https://bydeley.ca/"
 languageCode = "en-us"
 title = "The Bydeley Family"
 theme = "hugo-strata-theme"
