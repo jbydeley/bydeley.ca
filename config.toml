@@ -10,7 +10,7 @@ theme = "hugo-strata-theme"
 	description = "The Bydeley Family"
 
 	# Enable Google Analytics by inserting your tracking code
-	googleAnalytics = ""
+	googleAnalytics = "UA-61002880-1"
 
 
 	[params.sidebar]
