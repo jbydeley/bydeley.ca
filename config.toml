@@ -15,7 +15,7 @@ theme = "hugo-strata-theme"
 
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
-		avatar = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20151225_103034.png"
+		avatar = "https://storage.googleapis.com/bydeley/thumbs/IMG_20151225_103034.png"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "**We're the Bydeleys**, <br>Jared, Alison and Emily."
 		# The icons will be shown if you enter your username
@@ -40,37 +40,37 @@ theme = "hugo-strata-theme"
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160319_124056.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160319_124056.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160319_124056.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160319_124056.png"
 			title = "Pensive"
 			description = "Just thinking about important things."
 
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160215_102746.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160215_102746.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160215_102746.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160215_102746.png"
 			title = "Playful"
 			description = "This chair is slippery."
 
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160215_105037.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160215_105037.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160215_105037.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160215_105037.png"
 			title = "Shy"
 			description = "Hello there."
 
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160319_124001.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160319_124001.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160319_124001.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160319_124001.png"
 			title = "Curious"
 			description = "Can I see that?"
 
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160319_124110.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160319_124110.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160319_124110.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160319_124110.png"
 			title = "Fun"
 			description = "Hehehehe"
 
 		[[params.portfolio.gallery]]
-			image = "https://storage.googleapis.com/images.bydeley.ca/IMG_20160319_141721.jpg"
-			thumb = "https://storage.googleapis.com/images.bydeley.ca/thumbs/IMG_20160319_141721.png"
+			image = "https://storage.googleapis.com/bydeley/IMG_20160319_141721.jpg"
+			thumb = "https://storage.googleapis.com/bydeley/thumbs/IMG_20160319_141721.png"
 			title = "Chill"
 			description = "Yeah."
