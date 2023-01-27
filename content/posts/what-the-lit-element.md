@@ -11,6 +11,8 @@ categories:
     - "PWA"
 ---
 
+## Overview
+
 [Lit-Element](https://github.com/Polymer/lit-element) is the next step in the Polymer journey. Gone are the days of 2 way data binding. The library size has gone down too. Everything seems to have been built around [lit-html](https://github.com/Polymer/lit-html). 
 
 This post will be a bit of guide around using `Lit-Element` and we'll be making a clone of the Netflix UI. Unfortunately, Lit-Element hasn't hit a production ready release and the tools for starting a project are a bit lacking. We'll be starting with the [PWA Starter Kit](https://github.com/Polymer/pwa-starter-kit) which has far more than we need in it but the build / server system is setup and a lot of the boilerplate has already been added. 
@@ -78,6 +80,8 @@ class ProfileAvatar extends LitElement {
 
 window.customElements.define('profile-avatar', ProfileAvatar);
 ```
+
+## Who's watching?
 
 With that we have a way of creating a profile with an image and text. We'll use this to create our "Who's Watching?" page. Since this is all web componenty, our CSS is scoped and the element is nicely reusable. Let's move on and create our 'Who's watching?" page.
 
@@ -160,6 +164,7 @@ class ChooseProfile extends PageViewElement {
 window.customElements.define('choose-profile', ChooseProfile);
 ```
 
+## Closing Thoughts
 And with that we have the entire choose your profile page completed. While building this out I've found that `lit-element` is a double edged sword. The file size is small (2.9kb) but with that size comes very little in terms of functionality. Writing individual components has been a breeze but wiring them up into the router and redux has additional complexity because it isn't really done for you. 
 
 The lack of basic tools or documentation is a product of the fact that it's so new and isn't finished development yet. Something I hope they remedy quickly since that really slows every aspect of development down. 
