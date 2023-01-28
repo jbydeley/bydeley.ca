@@ -18,6 +18,11 @@ concurrency:
 defaults:
   run:
     shell: bash
+
+permissions:
+  id-token: write
+  contents: read
+  
 env:
   HUGO_VERSION: 0.110.0
 
