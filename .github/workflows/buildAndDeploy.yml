@@ -78,7 +78,5 @@ jobs:
           name: blog
 
       - name: Deploy
-        with:
-          name: blog
         run: |
           hugo deploy
