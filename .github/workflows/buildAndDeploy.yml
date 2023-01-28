@@ -72,6 +72,11 @@ jobs:
           role-to-assume: arn:aws:iam::241729739452:role/BydeleyBlogAccess
           aws-region: us-east-2
 
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: blog
+
       - name: Deploy
         with:
           name: blog
