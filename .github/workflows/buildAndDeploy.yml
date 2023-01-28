@@ -54,6 +54,12 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::241729739452:role/BydeleyBlogAccess
+          aws-region: us-east-2
+
       - name: Deploy
         run: |
           hugo deploy
