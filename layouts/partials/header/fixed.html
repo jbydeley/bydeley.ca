@@ -5,4 +5,6 @@
     {{ partial "partials/header/basic.html" . }}
   </div>
 </div>
-<script defer type="text/javascript" src="js/scroll.js"></script>
+
+{{ $jsScroll := resources.Get "/js/scroll.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsScroll.RelPermalink }}" integrity="{{ $jsScroll.Data.Integrity }}"></script>
