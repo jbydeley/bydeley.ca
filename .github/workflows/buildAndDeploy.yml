@@ -48,6 +48,12 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: blog
+          path: public/
 
   deploy:
     runs-on: ubuntu-latest
@@ -67,5 +73,7 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy
+        with:
+          name: blog
         run: |
           hugo deploy
